@@ -1,0 +1,8 @@
+-
+  name: loops example new way
+  hosts: client1
+  tasks:
+    - name: loop example
+      yum:
+        name: ['git', 'finger', 'docker', 'httpd', 'net-tools']
+        state: present
